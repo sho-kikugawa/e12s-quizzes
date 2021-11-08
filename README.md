@@ -1,2 +1,4 @@
 # e12s-quizzes
- Quizzes for E12S 2nd boss mechancis
+Quizzes for E12S boss mechanics
+
+Images are resources from the game.

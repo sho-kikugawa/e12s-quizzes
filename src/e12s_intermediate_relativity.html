@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>E12S Intermediate Relativity Quiz</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap');
+
+			h1, p, label {
+				font-family: 'Maven Pro', sans-serif;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="./js/e12s_intermediate_relativity.js" defer></script>
+	</head>
+	<body>
+		<h1>
+			E12S Intermediate Relativity Quiz
+		</h1>
+		<div id="quiz-sheet">
+			<p>
+				Your debuffs:
+				<img id="debuff-0" src="" />
+				<img id="debuff-1" src="" />
+				<img id="debuff-2" src="" />
+			</p>
+			<div id="answers">
+				<p>Where do you go for the <span id="debuff-num">third</span> debuff?</p>
+				<input type="radio" id="answer-out" name="position-answer" value="out">
+				<label for="answer-out">Get to the edge of the arena</label><br>
+				<input type="radio" id="answer-max-melee" name="position-answer" value="max melee">
+				<label for="answer-max-melee">Get to max melee range</label><br>
+				<input type="radio" id="answer-center" name="position-answer" value="center">
+				<label for="answer-center">Stack up in the center</label>
+				<br><br>
+				<button id="answer-button">Answer!</button>
+			</div>
+			<p id="result-text">&nbsp;</p>
+		</div>
+		<button id="reset-button">Restart the quiz</button>
+	</body>
+</html>

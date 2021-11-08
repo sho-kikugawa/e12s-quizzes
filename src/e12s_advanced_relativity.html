@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>E12S Advanced Relativity Quiz</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap');
+
+			h1, p, label, td{
+				font-family: 'Maven Pro', sans-serif;
+			}
+
+			td {
+				border-bottom: 1px black solid;
+			}
+
+			.reference-flex { 
+				display: flex;
+				flex-direction: row;
+			}
+			.player-list-flex {
+				display: flex;
+				flex-direction: column;
+				margin-right: 20px;
+			}
+			.player-list-flex > div {
+				width: 140px;
+				padding: 10px;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="./js/e12s_advanced_relativity.js" defer></script>
+	</head>
+	<body>
+		<h1>
+			E12S Advanced Relativity Quiz
+		</h1>
+		<div id="quiz-sheet">
+			<div id="reference-sheet" class="reference-flex">
+				<div id="player-list" class="player-list-flex">
+
+				</div>
+				<div>
+					<img src="./img/8GZrr55.jpg" alt="">
+				</div>
+			</div>
+
+			<div id="role-selected">
+				
+			</div>
+			<div id="question">
+			</div>
+			<div id="answers">
+			</div>
+			<br>
+			<button id="answer-button">Answer!</button>
+			<p id="result-text">&nbsp;</p>
+		</div>
+		<button id="reset-button">Restart the quiz</button>
+	</body>
+</html>
